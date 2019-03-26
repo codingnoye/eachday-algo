@@ -1,0 +1,1 @@
+for i in range(int(input())):j=input();print('Case #{}: {}'.format(i+1,int(j[0])+int(j[2])))

@@ -1,0 +1,1 @@
+for i in range(int(input())):j=input();print(int(j[0])+int(j[2]))
