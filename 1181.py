@@ -1,0 +1,1 @@
+s=sorted;print('\n'.join(s(s(set(eval("input(),"*int(input())))),key=len)))

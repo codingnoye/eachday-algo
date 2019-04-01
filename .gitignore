@@ -1,6 +1,6 @@
 
 \.vscode/
 
-test\.py
+test*
 
 out

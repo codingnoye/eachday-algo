@@ -1,0 +1,1 @@
+print(' '.join(eval('input(),'*8))[::2].count('F'))
