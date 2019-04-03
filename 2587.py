@@ -1,0 +1,1 @@
+l=sorted(eval('int(input()),'*5));print(int(sum(l)/5));print(l[2])

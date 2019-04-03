@@ -1,0 +1,1 @@
+l=eval('input(),'*9);print(max(l),l.index(max(l))+1,sep="\n")

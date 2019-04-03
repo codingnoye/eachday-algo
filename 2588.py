@@ -1,0 +1,1 @@
+i=int;a,b=i(input()),input();print(a*i(b[2]));print(a*i(b[1]));print(a*i(b[0]));print(a*i(b))
