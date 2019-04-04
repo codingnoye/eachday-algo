@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(10**6)
 n = int(input())
 def call(sugar, b3, b5):
     if sugar == 0:
