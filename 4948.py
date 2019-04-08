@@ -1,17 +1,21 @@
+era = [2]
+maxchecked = 2
 while True:
     n = int(input())
-    if n == 0:
+    if n==0:
         break
+    elif 2*n>maxchecked:
+        for i in range(maxchecked+1, 2*n+1):
+            issosu = True
+            for sosu in era:
+                if sosu*sosu>i:break
+                if i%sosu==0:
+                    issosu = False
+            if issosu:
+                era.append(i)
+            maxchecked = i
     count = 0
-    for i in range(n+1, 2*n+1):
-        if i==2:
-            count += 1
-            continue
-        prime = True
-        j = 1
-        while j*j <= i:
-            if i%j == 0:
-                prime = False
-            j+=1
-        if prime: count += 1
+    for i in era:
+        if i>n*2: break
+        if i>n: count += 1
     print(count)
