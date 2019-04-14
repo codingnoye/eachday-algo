@@ -1,0 +1,1 @@
+a=sum(eval('int(input()),'*4));print(a//60,a%60,sep='\n')

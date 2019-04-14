@@ -1,0 +1,1 @@
+print(sum(eval('int(input()),'*5)))
