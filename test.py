@@ -1,13 +1,12 @@
-n=int(input("임의의 정수 n을 지정하세요/ n ="))
+from bs4 import BeautifulSoup
+from urllib.request import Request,urlopen
 
-a=[]
-b=[]
-for i in range(2,n+1):
-    a.append(i)
-    b.append(i)
+req = Request("https://kmucoop.kookmin.ac.kr:42666/restaurant/restaurant.php?w=1")
+res = urlopen(req)
+html = res.read().decode('cp949')
 
-for i in range(1,len(a)):
-    for j in range(1,len(a)):
-        if a[i]!=j:
-            if (a[i]%j==0):
-                b.remove(b[i])
+bs = BeautifulSoup(html, 'lxml')
+tags = bs.select('table:nth-of-type(4) tr')
+for tag in tags:
+    print('1', tag.text)
+print(len(tags))
