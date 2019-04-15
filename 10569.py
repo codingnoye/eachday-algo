@@ -1,0 +1,1 @@
+i=int;j=lambda x:2+i(x[1])-i(x[0]);eval('print(j(input().split())),'*i(input()))
