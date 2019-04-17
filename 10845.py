@@ -4,11 +4,11 @@ for i in range(int(input())):
     if now[0] == "push":
         queue.append(now[1])
     elif now[0] == "pop":
-        print(queue.pop(0))
+        print(queue.pop(0) if len(queue) else -1)
     elif now[0] == "size":
         print(len(queue))
     elif now[0] == "empty":
-        print(1 if len(queue) else 0)
+        print(0 if len(queue) else 1)
     elif now[0] == "front":
         print(queue[0] if len(queue) else -1)
     elif now[0] == "back":
