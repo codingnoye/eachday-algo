@@ -1,0 +1,1 @@
+input();print(sum(eval('max(map(int,input().split())),'*2)))
