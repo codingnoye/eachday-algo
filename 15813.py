@@ -1,0 +1,1 @@
+input();print(sum(ord(c)-64 for c in input()))

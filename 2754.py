@@ -1,0 +1,1 @@
+a=input()+' ';print('FDCBA'.index(a[0])+[0.3,0.0,-0.3,0.0]['+0- '.index(a[1])])

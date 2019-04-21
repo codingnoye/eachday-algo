@@ -1,0 +1,1 @@
+exec("a,b,c=sorted(map(int,input().split()))[1:4];print(a+b+c if c-a<4 else'KIN');"*int(input()))
