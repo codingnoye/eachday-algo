@@ -1,0 +1,1 @@
+print(int(str(eval('int("'+input()[::-1].replace(' ','")+int("')+'")'))[::-1]))
