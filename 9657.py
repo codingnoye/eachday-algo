@@ -1,0 +1,1 @@
+print('CY'if[1,0,1,0,0,0,0][int(input())%7]else'SK')

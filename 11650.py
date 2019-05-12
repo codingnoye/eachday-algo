@@ -1,0 +1,1 @@
+print(*map(lambda x:' '.join(x),sorted(eval('input().split(),'*int(input())),key=lambda x:int(x[0])*999999+int(x[1]))),sep='\n')

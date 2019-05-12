@@ -1,0 +1,1 @@
+print('Junhee is '+['not ',''][eval('int(input())-0.5+'*int(input())+'0')>0]+'cute!')

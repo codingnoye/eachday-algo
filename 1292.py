@@ -1,10 +1,8 @@
-s,e,c,n=int(input()),int(input()),0,0
-for i in range(1,e+1):
-    while True:
-        if s<=i:
-            c+=i
-        n+=1
-        if n==i:
-            i=0
-            break
-print(c)
+import math
+s,e=map(int,input().split())
+def whatis(n):
+    return math.ceil(((8*n)**0.5-1)/2)
+r=0
+for i in range(s,e+1):
+    r+=whatis(i)
+print(r)
