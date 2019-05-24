@@ -1,0 +1,1 @@
+print(*divmod((eval(input().replace(" ",'*60+'))+int(input()))%1440,60))
