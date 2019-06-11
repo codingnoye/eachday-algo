@@ -1,3 +1,3 @@
-x,y,n=0,1,int(input())
-for i in range(n):x,y=y,x+y
+x,y=0,1
+exec('x,y=y,x+y;'*int(input()))
 print(y%10007)
