@@ -1,15 +1,17 @@
+import sys
 queue = []
 for i in range(int(input())):
-    now = input().split()
-    if now[0] == "push":
-        queue.append(now[1])
-    elif now[0] == "pop":
+    now = sys.stdin.readline()[:-1]
+    act = now[:4]
+    if act == "push":
+        queue.append(now[5:])
+    elif act == "pop":
         print(queue.pop(0) if len(queue) else -1)
-    elif now[0] == "size":
+    elif act == "size":
         print(len(queue))
-    elif now[0] == "empty":
+    elif act == "empt":
         print(0 if len(queue) else 1)
-    elif now[0] == "front":
+    elif act == "fron":
         print(queue[0] if len(queue) else -1)
-    elif now[0] == "back":
+    elif act == "back":
         print(queue[len(queue)-1] if len(queue) else -1)
